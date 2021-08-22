@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2><u><center>Registration Form </center></u></h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    First Name: <input type="text" First name="fname">
+    Last Name: <input type="text" Last name="lname">
+    password:<input type="number" password="password">
+    Re type password:<input type="number" password="Re type password">
+    <label>Gender :</label>
+<input id="male" name="gender" type="radio" value="Male">
+<label>Male</label>
+<input id="female" name="gender" type="radio" value="Female">
+<label>Female</label>
+
+Contact number: <input type="number" Last name="contact number">
+
+
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
